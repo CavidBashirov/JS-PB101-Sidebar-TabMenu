@@ -54,11 +54,19 @@ closeIcon.addEventListener("click",function(){
 
 
 let tabHeaders = document.querySelectorAll(".tab-headers ul li");
+let contents = document.querySelectorAll(".tab-body .content");
 
 tabHeaders.forEach(header => {
     header.addEventListener("click",function(){
         document.querySelector(".active-tab").classList.remove("active-tab");
         this.classList.add("active-tab");
+        for (const item of contents) {
+            if(item.getAttribute("data-id") == this.getAttribute("data-id")){
+                item.classList.remove("d-none")
+            }else{
+                item.classList.add("d-none")
+            }
+        }
     })
 });
 
