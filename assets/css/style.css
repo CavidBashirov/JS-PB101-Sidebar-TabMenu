@@ -1,0 +1,99 @@
+#sidebar-tab{
+    display: flex;
+}
+.sidebar{
+   width: 400px;
+   height: 100vh;
+   background-color: goldenrod;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   transform: translate(-360px);
+   transition: all 0.5s;
+}
+
+.sidebar ul{
+    width: 300px;
+    margin-top: 50px;
+}
+
+.sidebar ul li{
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    transition:all 0.5s;
+}
+
+.sidebar ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+.sidebar .icon i{
+    font-size: 25px;
+    color: white;
+}
+
+.sidebar .icon{
+   position: absolute;
+   right: 10px;
+   top: 6px;
+   cursor: pointer;
+}
+
+.open-sidebar{
+    transform: translate(0px);
+}
+
+.tab-menu-area{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.tab-menu-area .tab-menu{
+
+}
+
+.tab-menu-area .tab-menu .tab-headers{
+    height: 50px;
+    background: red;
+}
+
+.tab-menu-area .tab-menu .tab-headers ul{
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.tab-menu-area .tab-menu .tab-headers ul li{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+}
+
+
+.tab-menu-area .tab-menu .tab-body{
+    border: 1px solid red;
+    padding: 9px;
+    border-top: none;
+}
+
+.tab-menu-area .tab-menu .tab-body .content{
+
+}
+
+.active-tab{
+   background-color: chartreuse;
+}
